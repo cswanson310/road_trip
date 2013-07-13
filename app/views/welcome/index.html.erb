@@ -1,0 +1,10 @@
+<div id="day_photos">
+  <ul>
+      <% Day.all.each do |day| %>
+        <li>
+          <%= image_tag day.cover_photo %>
+          <h2><%= "Day #{day.id}" %></h2>
+        </li>
+      <% end %>
+  </ul>
+</div>

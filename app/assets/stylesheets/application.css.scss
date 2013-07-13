@@ -16,7 +16,7 @@ body {
     background: #f0f0f0;
 }
 #header {
-    background: #a3d;
+    background: #4ad;
     border-bottom: 3px solid black;
     text-align: center;
 
@@ -28,10 +28,10 @@ body {
 }
 #content {
     width: 1000px;
-    height: 300px;
+    min-height: 300px;
     margin-left: auto;
     margin-right: auto;
-    background: #fff;
+    background: #c1c0a0;
     border-radius: 2px;
     border: 1px solid #a0a0a0;
 }
