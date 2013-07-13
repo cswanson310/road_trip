@@ -1,4 +1,16 @@
 RoadTrip::Application.routes.draw do
+  resources :people
+
+  resources :photos
+
+  resources :travel_infos
+
+  resources :stories
+
+  resources :cities
+
+  resources :days
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

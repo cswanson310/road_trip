@@ -1,0 +1,25 @@
+<h1>Listing travel_infos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @travel_infos.each do |travel_info| %>
+      <tr>
+        <td><%= link_to 'Show', travel_info %></td>
+        <td><%= link_to 'Edit', edit_travel_info_path(travel_info) %></td>
+        <td><%= link_to 'Destroy', travel_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Travel info', new_travel_info_path %>

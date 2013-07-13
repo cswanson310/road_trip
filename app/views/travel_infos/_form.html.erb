@@ -1,0 +1,17 @@
+<%= form_for(@travel_info) do |f| %>
+  <% if @travel_info.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@travel_info.errors.count, "error") %> prohibited this travel_info from being saved:</h2>
+
+      <ul>
+      <% @travel_info.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
