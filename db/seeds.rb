@@ -51,13 +51,13 @@ cover_photos = [
   "P5243685.JPG",
   "IMG_1144.jpg",
   "IMG_1192.JPG"
-]
+].zip(1..12).map{|path,i| Photo.create(path: path, day_id: i )}
 
 
 (1..12).map do |i|
  Day.create([start_city_id:  City.find(i).id,
             end_city_id:    City.find(i + 1).id,
             travel_info_id: TravelInfo.find(i).id,
-            cover_photo:    cover_photos[i - 1],
+            cover_photo_id: cover_photos[i - 1].id,
             date:           Date.new(2013,5,15) + (i - 1).days])
 end

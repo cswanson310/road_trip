@@ -1,10 +1,17 @@
 <div id="day_photos">
   <ul>
-      <% Day.all.each do |day| %>
-        <li>
-          <%= image_tag day.cover_photo %>
-          <h2><%= "Day #{day.id}" %></h2>
+    <% Day.all.each do |day| %>
+      <a href='<%= day_path(day) %>'>
+        <li id='<%= day.id %>'>
+          <div class='photo'>
+            <%= render day.cover_photo %>
+          </div>
+          <div class='label'>
+            <h2 class='day_num'><%= "Day #{day.id}" %></h2>
+            <h2 class='name'><%= day.display_name %></h2>
+          </div>
         </li>
-      <% end %>
+      </a>
+    <% end %>
   </ul>
 </div>

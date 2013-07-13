@@ -1,10 +1,16 @@
 #day_photos {
     text-align: center;
 
-    img {
+    .photo {
         width: 200px;
-        height: 200px;
-        padding: 10px 10px 5px 10px;
+        height: 180px;
+        overflow: hidden;
+        padding: 10px 0px 10px 0px;
+        position: relative;
+    }
+    img {
+        height: 180px;
+        width: 200px;
     }
     li {
         background: #fff;
@@ -13,13 +19,23 @@
         display: inline-block;
         margin: 10px;
     }
-
-    h2 {
+    .label {
         border-top: 1px solid black;
         padding-bottom: 10px;
         padding-top: 5px;
         background: black;
         color: white;
         font-family: 'Geneva';
+    }
+    li:hover {
+        .day_num {
+            display: none;
+        }
+        .name {
+            display: block;
+        }
+    }
+    .name {
+        display: none;
     }
 }
