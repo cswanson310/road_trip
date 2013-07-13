@@ -8,7 +8,22 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="header">
+  <h1>Road Trip 2013</h1>
+</div>
+
+<div id="content">
+
+  <%= yield %>
+
+</div>
+
+<div id="cities">
+  <% City.all.each do |city| %>
+    <li><%= link_to city.short_name, city_path(city) %></li>
+    <span>-</span>
+  <% end %>
+</div>
 
 </body>
 </html>

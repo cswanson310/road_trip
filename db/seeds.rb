@@ -11,19 +11,19 @@ people = Person.create([{first: 'Alex',    last: 'Smith'},
                         {first: 'Charlie', last: 'Swanson'},
                         {first: 'Lindsay', last: 'MacGillivray'}])
 
-cities = City.create([{name: 'Pittsburgh'},           #1
-                      {name: 'Louisville'},           #2
-                      {name: 'Memphis'},              #3
-                      {name: 'New Orleans'},          #4
-                      {name: 'Dallas'},               #5
-                      {name: 'Black Mesa State Park'},#6
-                      {name: 'Denver'},               #7
-                      {name: 'Arches National Park'}, #8
-                      {name: 'Grand Canyon'},         #9
-                      {name: 'Las Vegas'},            #10
-                      {name: 'Laguna Niguel'},        #11
-                      {name: 'Big Sur'},              #12
-                      {name: 'San Francisco'}])       #13
+cities = City.create([{name: 'Pittsburgh',            short_name: 'Pittsburg'},            #1
+                      {name: 'Louisville',            short_name: 'Louisville'},           #2
+                      {name: 'Memphis',               short_name: 'Memphis'},              #3
+                      {name: 'New Orleans',           short_name: 'New Orleans'},          #4
+                      {name: 'Dallas',                short_name: 'Dallas'},               #5
+                      {name: 'Black Mesa State Park', short_name: 'Black Mesa'},           #6
+                      {name: 'Denver',                short_name: 'Denver'},               #7
+                      {name: 'Arches National Park',  short_name: 'Arches'},               #8
+                      {name: 'Grand Canyon',          short_name: 'Grand Canyon'},         #9
+                      {name: 'Las Vegas',             short_name: 'Vegas'},                #10
+                      {name: 'Laguna Niguel',         short_name: 'Laguna Niguel'},        #11
+                      {name: 'Big Sur State Park',    short_name: 'Big Sur'},              #12
+                      {name: 'San Francisco',         short_name: 'San Fran'}])            #13
 
 travel_infos = TravelInfo.create([{hours: 6 , minutes: 12, miles: 388},  #1
                                   {hours: 5 , minutes: 40, miles: 384},  #2
