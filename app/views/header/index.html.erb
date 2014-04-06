@@ -1,0 +1,13 @@
+<div id="background">
+  <table>
+    <% 3.times do %>
+      <td>
+        <% (1..10).map{ Photo.all.sample }.each do |photo| %>
+          <tr>
+            <%= render photo %>
+          <tr>
+        <% end %>
+      </td>
+    <% end %>
+  </table>
+</div>

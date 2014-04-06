@@ -1,41 +1,42 @@
-#day_photos {
-    text-align: center;
+.welcome {
+    #day_photos {
+        text-align: center;
 
-    .photo {
-        width: 200px;
-        height: 180px;
-        overflow: hidden;
-        padding: 10px 0px 10px 0px;
-        position: relative;
-    }
-    img {
-        height: 180px;
-        width: 200px;
-    }
-    li {
-        background: #fff;
-        border-radius: 5px;
-        border: 1px solid black;
-        display: inline-block;
-        margin: 10px;
-    }
-    .label {
-        border-top: 1px solid black;
-        padding-bottom: 10px;
-        padding-top: 5px;
-        background: black;
-        color: white;
-        font-family: 'Geneva';
-    }
-    li:hover {
-        .day_num {
-            display: none;
+        .photo {
+            width: 200px;
+            height: 180px;
+            overflow: hidden;
+            position: relative;
+        }
+        img {
+            height: 180px;
+            width: 200px;
+        }
+        li {
+            background: #fff;
+            border-radius: 5px;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 10px;
+        }
+        .label {
+            border-top: 1px solid black;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            background: black;
+            color: white;
+            font-family: 'Geneva';
+        }
+        li:hover {
+            .day_num {
+                display: none;
+            }
+            .name {
+                display: block;
+            }
         }
         .name {
-            display: block;
+            display: none;
         }
-    }
-    .name {
-        display: none;
     }
 }
